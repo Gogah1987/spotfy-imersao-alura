@@ -25,11 +25,11 @@ function displayResult(result) {
 
 document.addEventListener('input', () => {
     const searchTerm = searchInput.value.toLowerCase();
-    if (searchTerm === '') {
-        resultsPlaylist.classList.add('hidden');
-        resultsArtist.classList.remove('hidden');
+    if (searchTerm === '') {  
+        resultsPlaylist.classList.remove('hidden');      
+        resultsArtist.classList.add('hidden');        
         return;
-    }
+    } 
 
     requestApi(searchTerm);
 })
