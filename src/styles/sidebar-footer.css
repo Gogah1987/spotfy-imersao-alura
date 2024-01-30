@@ -48,6 +48,10 @@ h1 {
     font-size: 14px;    
 }
 
+.sidebar nav ul li a:hover{
+    color: var(--text-base-light);
+}
+
 .biblio {
     background-color: #121212;
     display: flex;
@@ -75,7 +79,7 @@ h1 {
     font-size: 1rem;
     font-weight: 700;    
     text-align: center;
-    padding: 20px 10px;
+    padding: 20px 10px;    
 }
 
 .biblio .biblio__button .fa {
@@ -86,7 +90,14 @@ h1 {
 }
 
 .biblio .biblio__content .fa-plus {
-    margin: 24px 10px;
+    margin: 24px 10px;    
+}
+
+.playlist-Scoll {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;      
+    margin: 0 auto;
 }
 
 .section-playlist {
@@ -129,11 +140,18 @@ h1 {
     color: #000;
     border-radius: 25px;
     font-size: 12px;
-    font-weight: 700;    
+    font-weight: 600;    
     padding: 10px;
     margin-top: 12px;
     border: 0px;
     width: 125px;
+    cursor: pointer;
+}
+
+.section-playlist__content .section-playlist__button:hover{
+    background-color: var(--bg-hover-green);
+    font-weight: bold;
+    transform: scale(1.1);
 }
 
 .sidebar .links-faq { 
